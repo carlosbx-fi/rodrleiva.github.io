@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #101630;
+
+}
+img{
+    max-width: 100%;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 50px 0 0 0;
+
+}
+.header-content{
+    display: flex;
+    flex: 1;
+
+}
+.header-txt{
+    flex-basis: 50px;
+
+}
+.header-txt span{
+    font-size: 30px;
+    font-weight: 600;
+    color:aliceblue
+}
+.header-txt h1{
+    font-size: 100px;
+    color: aliceblue;
+    line-height: 1;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 10px 0 25px 0;
+}
+
+.about{
+    padding: 0 0100px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.about-img{
+    flex-basis: 40%;
+
+}
+
+.about-img img {
+    width: 350px;
+    border-radius: 8px;
+    border: 10px solid blanchedalmond;
+
+}
+
+.about-txt{
+    flex-basis: 60%;
+
+}
+
+h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+.about-txt p{
+
+    color: aliceblue;
+    font-size: 17px;
+    margin-bottom: 50px;
+
+
+}
+.butons a{
+    margin-right: 15px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 35px;
+    background: linear-gradient(
+        90deg,
+        rgba(78,159,215,1) 0%,
+        rgba(74,42,193,1) 100%
+    );
+    color: aliceblue;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 10px;
+
+}
+
+.educacion{
+    text-align: center;
+    padding: 50px 0;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills {
+    padding: 50px 0 100px 0;
+    text-align: center;
+
+}
+
+.skills-content {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    justify-content: center;
+   
+}
+
+.skills-content img {
+    width: 70px;
+}
+
+.portafolio {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.portafolio-content {
+    margin-top: 70px;
+
+}
+
+.portafolio-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.portafolio-txt {
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.portafolio-txt span {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    color: aliceblue;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.portafolio-txt h3{
+    color: aliceblue;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.portafolio-txt p {
+    font-size: 35px;
+    color: aliceblue;
+    margin-bottom: 25px;
+}
+
+.portafolio-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.portafolio-img img {
+    width: 400px;
+}
+
+.footer{
+ 
+ height: 20px;
+ background-color: aliceblue;
+
+}
+.p{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+   text-align: center;
+  
+}
+
+@media ( max-width: 991px) {
+    .menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: initial;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+
+    }
+    .menu .navbar ul li {
+        width: 100%;
+        
+    }
+    #menu :checked ~ .navbar {
+        display: initial;
+    }
+    .header {
+        min-height: 0vh;
+        padding: 100px 30px 30px 30px;
+    }
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .header-txt h1{
+        font-size: 70px;
+    }
+    
+    .about{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .about-img {
+        text-align: center;
+    }
+
+    .about-img img{
+        width: 250px;
+        margin-bottom: 15px;
+
+    }
+
+    .butons a {
+        margin: 0 0 10px 0;
+    }
+
+    .portafolio{
+        padding: 30px;
+
+    }
+
+    .portafolio-content {
+        margin-top: 30px;
+
+    }
+
+    .portafolio-1{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .portafolio-txt{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .portafolio-img {
+        order: 2;
+    }
+
+    .skills {
+        padding: 0 30px 30px 30px;
+
+    }
+
+    .skills-content {
+        margin-top: 0;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+        padding: 0 100px;
+    }
+
+}
